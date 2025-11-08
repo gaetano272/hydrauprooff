@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Assainissement autonome — HYDRAUPRO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS global du site -->
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+
+  <!-- Styles spécifiques : page blanche / texte noir pour cette page -->
+  <style>
+    .white-page { background:#ffffff; color:#0a0a0a; padding:clamp(40px,6vw,80px) 20px; }
+    .white-page .content { max-width:980px; margin:0 auto; }
+    .white-page h1, .white-page h2, .white-page h3, .white-page p, .white-page li { color:#0a0a0a; }
+    .white-page h1 { font-family:"Playfair Display",serif; font-size:clamp(1.8rem,3.2vw,2.4rem); margin:0 0 12px; line-height:1.25; }
+    .white-page .lead { font-size:clamp(1.02rem,1.5vw,1.15rem); margin:0 0 24px; }
+    .white-page p { margin:0 0 14px; }
+    .white-page .spacer { height:clamp(12px,2vw,18px); }
+
+    /* Figures (images centrées, arrondies, petit cadre) */
+    .figure {
+      margin: 0 0 clamp(20px, 3vw, 28px);
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+    }
+    .figure img{
+      width:100%;
+      max-width: 980px;
+      height:auto;
+      display:block;
+      border-radius: 16px;
+      border:1px solid rgba(0,0,0,.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+    .figure figcaption{
+      font-size:.95rem;
+      color:#444;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="HYDRAUPRO">
+        <img src="images/HYDRAUPRO_orange_vif.png" alt="HYDRAUPRO">
+        <span class="brand-text">HYDRAUPRO</span>
+      </a>
+
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="active">Nos solutions</a>
+            <ul class="dropdown">
+              <li><a href="assainissement.html" class="active">Assainissement autonome</a></li>
+              <li><a href="distribution.html">Distribution eau potable</a></li>
+              <li><a href="irrigation.html">Irrigation</a></li>
+            </ul>
+          </li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="burger" aria-label="Menu"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <!-- CONTENU PAGE BLANCHE -->
+  <main class="white-page" id="assainissement">
+    <div class="content">
+      <!-- Photo AU-DESSUS du texte -->
+      <figure class="figure">
+        <img src="images/circuit de l'assainissement.jpg" alt="Exemple d’ouvrage d’assainissement autonome">
+        <figcaption>Exemple d’ouvrage d’assainissement autonome.</figcaption>
+      </figure>
+
+      <h1>Assainissement autonome</h1>
+      <p class="lead">
+        L’Assainissement autonome correspond à tout système d’assainissement effectuant la collecte, le prétraitement,
+        l’épuration, l’infiltration ou le rejet des eaux usées domestiques des habitations non raccordées au réseau public d’assainissement.
+      </p>
+
+      <p>
+        Un système d’assainissement autonome bien conçu, correctement installé et régulièrement entretenu, c’est la garantie
+        d’une meilleure protection de l’environnement, de la salubrité publique et de votre qualité de vie.
+      </p>
+
+      <div class="spacer"></div>
+
+      <p>
+        Nous vous accompagnons dans la planification, la conception, la construction, l'exploitation et la maintenance de vos ouvrages
+        d’assainissement autonome, en respectant scrupuleusement les normes en vigueur sénégalaise. Nous proposons des solutions
+        clé en main, adaptées à vos besoins spécifiques et à vos projets, qu’il s’agisse de maisons d'habitation, de commerces
+        ou d’installations collectives.
+      </p>
+
+      <!-- Photo EN DESSOUS du texte -->
+      <figure class="figure" style="margin-top: clamp(22px,3.5vw,34px);">
+        <img src="" alt="">
+        <figcaption>Mise en œuvre sur le terrain : dimensionnement, installation et entretien.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+<!-- BANDEAU CTA -->
+<section class="cta-band" aria-label="Prix de l’étude">
+  <div class="cta-inner">
+    <!-- Logo + nom -->
+    <div class="cta-brand">
+      <img src="images/HYDRAUPRO_orange_vif.png" alt="HYDRAUPRO">
+      <span>HYDRAUPRO</span>
+    </div>
+
+    <!-- Texte -->
+    <p class="cta-text">
+      <strong>Prix de l’étude :</strong> sur demande de devis
+    </p>
+
+    <!-- Bouton -->
+    <a class="btn-ghost" href="contact.html">Nous contacter</a>
+  </div>
+</section>
+
+ <!-- ===== FOOTER HYDRAUPRO (sans colonne "Nous suivre") ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <!-- Marque -->
+    <div class="footer-brand">
+      <a class="logo" href="index.html">
+        <img src="images/HYDRAUPRO_orange_vif.png" alt="HYDRAUPRO" />
+        <span>HYDRAUPRO</span>
+      </a>
+      <p class="brand-tag">Hydraulique urbaine & rurale</p>
+    </div>
+
+    <!-- Colonne 1 -->
+    <div class="footer-col">
+      <h4>Nos solutions</h4>
+      <ul>
+        <li><a href="assainissement.html">Assainissement autonome</a></li>
+        <li><a href="distribution.html">Distribution eau potable</a></li>
+        <li><a href="irrigation.html">Irrigation</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 2 -->
+    <div class="footer-col">
+      <h4>Notre société</h4>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cookies.html">Politique des cookies</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 3 -->
+    <div class="footer-col">
+      <h4>Nous contacter</h4>
+      <ul class="contact-list">
+        <li>Villa 376 Médine, M’Bour – Sénégal</li>
+        <li><a href="tel:+221000000000">+221 xx xx xx xx</a></li>
+        <li><a href="mailto:contact@hydraupro.sn">contact@hydraupro.sn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © <span class="js-year"></span> HYDRAUPRO — Tous droits réservés — site créé par Onde Digital
+  </div>
+</footer>
+
+</body>
+</html>

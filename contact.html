@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Contact — HYDRAUPRO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="HYDRAUPRO">
+        <img src="images/HYDRAUPRO_orange_vif.png" alt="HYDRAUPRO">
+        <span class="brand-text">HYDRAUPRO</span>
+      </a>
+
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li class="has-dropdown">
+            <a href="#">Nos solutions</a>
+            <ul class="dropdown">
+              <li><a href="assainissement.html">Assainissement autonome</a></li>
+              <li><a href="distribution.html">Distribution eau potable</a></li>
+              <li><a href="irrigation.html">Irrigation</a></li>
+            </ul>
+          </li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="burger" aria-label="Menu"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+  <section id="contact" class="section contact-section">
+    <h2 class="section__title">NOUS CONTACTER</h2>
+    <p class="section__lead">
+      Un projet ? Une question précise ? Remplissez ce formulaire, nous vous rappelons !
+    </p>
+
+    <div class="contact-layout">
+      <!-- FORMULAIRE -->
+      <form class="card contact-form" action="#" method="post">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input id="prenom" name="prenom" type="text" placeholder="Prénom">
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" type="text" placeholder="Nom">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+          <label for="tel">Téléphone</label>
+          <input id="tel" name="tel" type="tel" placeholder="Téléphone">
+        </div>
+
+        <div class="form-group">
+          <label for="sujet">Sujet</label>
+          <input id="sujet" name="sujet" type="text" placeholder="Sujet">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Votre message"></textarea>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" name="rgpd">
+          <span>En soumettant ce formulaire, j’accepte que les informations saisies soient utilisées pour me recontacter et répondre à ma demande.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+      </form>
+
+      <!-- MAP / ADRESSE -->
+      <aside class="card contact-aside">
+        <h3 class="contact-title">Adresse</h3>
+        <p>Villa 376 Médine M’BOUR (Sénégal)</p>
+        <iframe
+          class="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Villa%20376%20M%C3%A9dine%20M%E2%80%99BOUR%20S%C3%A9n%C3%A9gal&output=embed">
+        </iframe>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER HYDRAUPRO (sans colonne "Nous suivre") ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <!-- Marque -->
+    <div class="footer-brand">
+      <a class="logo" href="index.html">
+        <img src="images/HYDRAUPRO_orange_vif.png" alt="HYDRAUPRO" />
+        <span>HYDRAUPRO</span>
+      </a>
+      <p class="brand-tag">Hydraulique urbaine & rurale</p>
+    </div>
+
+    <!-- Colonne 1 -->
+    <div class="footer-col">
+      <h4>Nos solutions</h4>
+      <ul>
+        <li><a href="assainissement.html">Assainissement autonome</a></li>
+        <li><a href="distribution.html">Distribution eau potable</a></li>
+        <li><a href="irrigation.html">Irrigation</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 2 -->
+    <div class="footer-col">
+      <h4>Notre société</h4>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cookies.html">Politique des cookies</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 3 -->
+    <div class="footer-col">
+      <h4>Nous contacter</h4>
+      <ul class="contact-list">
+        <li>Villa 376 Médine, M’Bour – Sénégal</li>
+        <li><a href="tel:+221000000000">+221 xx xx xx xx</a></li>
+        <li><a href="mailto:contact@hydraupro.sn">contact@hydraupro.sn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © <span class="js-year"></span> HYDRAUPRO — Tous droits réservés — site créé par Onde Digital
+  </div>
+</footer>
+
+
+</body>
+</html>
